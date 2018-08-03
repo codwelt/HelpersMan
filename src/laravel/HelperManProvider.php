@@ -10,10 +10,9 @@ class HelperManProvider extends \Illuminate\Support\ServiceProvider
 {
     public function boot()
     {
-
         //Registra helpers
         foreach (glob(realpath(__DIR__."/../")."/functions/*.php") as $fileName){
-            require_once $fileName;
+            require_once (realpath($fileName));
         }
 
     }
