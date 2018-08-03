@@ -1,4 +1,4 @@
-<?
+<?php
 
 if(!function_exists('helperman_random_string')){
     /**
