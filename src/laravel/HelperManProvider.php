@@ -1,6 +1,6 @@
 <?php
 
-namespace Codwelt\HelpersManPHP\laravel;
+namespace Codwelt\HelpersMan\laravel;
 
 /**
  * Class HelpersManProvider
@@ -8,7 +8,6 @@ namespace Codwelt\HelpersManPHP\laravel;
  */
 class HelperManProvider extends \Illuminate\Support\ServiceProvider
 {
-
     public function boot()
     {
 
