@@ -12,7 +12,7 @@ class HelperManProvider extends \Illuminate\Support\ServiceProvider
     {
 
         //Registra helpers
-        foreach (glob(realpath(__DIR__."/../functions/*.php")) as $fileName){
+        foreach (glob(realpath(__DIR__."/../")."/functions/*.php") as $fileName){
             require_once $fileName;
         }
 
