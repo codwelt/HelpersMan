@@ -1,9 +1,9 @@
 # HelpersMan
 Scripts, metodos  y objectos de ayuda para programadores de php puro y de laravel.
 
-#Caracteristicas
+# Caracteristicas
 
-##Metodos
+## Metodos
 - helperman_random_string($length, $keyspace)   
   
    Genera un string aleatorio de con los caracteres de keyspace y de un tamaño indicado con el lenght
@@ -16,15 +16,15 @@ Scripts, metodos  y objectos de ayuda para programadores de php puro y de larave
     - $remplaceTo : por lo que se va a reemplazar los caracteres. Por defecto es, nada, si no se le especifica
     - $regex : El patron de busqueda se va a seguir para los caracteres a reemplazar. Por defecto es `/[^A-Za-z0-9]/` si no se le especifica.
 
-##Instalacion
+## Instalacion
 
-###Laravel >= 5.6
+### Laravel >= 5.6
 
 En la consola dentro del proyecto
 ```Bash
 composer require codwelt/helpersman
 ```
-###PHP
+### PHP
 
 Para la instalacion en un entorno de php puro es necesario taner en el equipo el composer
 
