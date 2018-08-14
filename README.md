@@ -44,7 +44,7 @@ require_once ('vendor/codwelt/HelpersMan/src/functions/basic.php');
  * Codigo php  
  */
 ```
-Ya con eso porto todos los metodo que tiene disponibles el parquete, tan solo llamandolos
+Ya con es tiene todos los metodo que tiene disponibles el paruete, tan solo llamandolos
 
 ```php
 <?php
