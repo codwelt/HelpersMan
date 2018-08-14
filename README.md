@@ -44,7 +44,7 @@ require_once ('vendor/codwelt/HelpersMan/src/functions/basic.php');
  * Codigo php  
  */
 ```
-Ya con es tiene todos los metodo que tiene disponibles el paruete, tan solo llamandolos
+Ya con eso tiene disponibles el paquete, tan solo llamandolos
 
 ```php
 <?php
