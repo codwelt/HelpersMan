@@ -1,6 +1,11 @@
 <?php
 
-if(!function_exists('helperman_random_string')){
+/**
+ * Class HelpersMan
+ * @author Juan Diaz - FuriosoJack <iam@furiosojack.com>
+ */
+class HelpersMan
+{
     /**
      * Genera un string aleatorio de con los caracteres de keyspace y de un tamaño indicado con el lenght
      * @param $length  Tamaño del string a generar
@@ -8,7 +13,7 @@ if(!function_exists('helperman_random_string')){
      * @return string
      * @throws Exception
      */
-    function helperman_random_string($length, $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'): string
+    public static function random_string($length, $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
     {
         $str = '';
         $max = mb_strlen($keyspace, '8bit') - 1;
@@ -17,9 +22,6 @@ if(!function_exists('helperman_random_string')){
         }
         return $str;
     }
-}
-
-if(!function_exists('helperman_purificate_string')){
 
     /**
      * Elimina caracteres especiales saltos de linea y cualquier cosa que no sea una letra o numero
@@ -28,7 +30,7 @@ if(!function_exists('helperman_purificate_string')){
      * @param string $regex el patron de busqueda se va a seguir para los caracteres a reemplazar
      * @return string
      */
-    function helperman_purificate_string($string, $remplaceTo = '' , $regex = '/[^A-Za-z0-9]/'):string
+    public static function purificate_string($string, $remplaceTo = '' , $regex = '/[^A-Za-z0-9]/')
     {
         return preg_replace($regex,$remplaceTo,$string);
     }

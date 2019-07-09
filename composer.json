@@ -3,11 +3,7 @@
     "description": "Funciones de ayuda para php, laravel y el mundo",
     "type": "library",
     "require": {
-        "php": ">= 7",
-        "laravel/framework": "^5.6"
-    },
-    "require-dev": {
-        "symfony/thanks": "^1.0"
+        "php": ">= 7"
     },
     "license": "MIT",
     "authors": [
@@ -19,13 +15,6 @@
     "autoload": {
         "psr-4": {
             "Codwelt\\HelpersMan\\": "src"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Codwelt\\HelpersMan\\laravel\\HelperManProvider"
-            ]
         }
     }
 }
