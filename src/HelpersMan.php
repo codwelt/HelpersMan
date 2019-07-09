@@ -11,7 +11,7 @@ class HelpersMan
      * @param $length  Tamaño del string a generar
      * @param string $keyspace caracteres con los que se va a generar
      * @return string
-     * @throws Exception
+     * @throws \Exception
      */
     public static function random_string($length, $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
     {
