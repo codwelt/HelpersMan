@@ -1,5 +1,5 @@
 <?php
-
+namespace  Codwelt\HelpersMan;
 /**
  * Class HelpersMan
  * @author Juan Diaz - FuriosoJack <iam@furiosojack.com>

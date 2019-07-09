@@ -1,5 +1,5 @@
 # HelpersMan
-Scripts, metodos  y objectos de ayuda para programadores de php puro y de laravel.
+Scripts, metodos  y objectos de ayuda para programadores de php.
 
 # Caracteristicas
 
@@ -18,12 +18,6 @@ Scripts, metodos  y objectos de ayuda para programadores de php puro y de larave
 
 ## Instalacion
 
-### Laravel >= 5.6
-
-En la consola dentro del proyecto
-```Bash
-composer require codwelt/helpersman
-```
 ### PHP
 
 Para la instalacion en un entorno de php puro es necesario taner en el equipo el composer
@@ -34,21 +28,12 @@ dentro del proyecto usar en la consola
 composer require codwelt/helpersman
 ```
 
-luego en el archivo en el que va a usar las funciones o metodos debe incluir lo siguiente que se va usar lo que necesite del paquete añade lo siguiente para 
 
-```php
-<?php
-require_once ('vendor/codwelt/HelpersMan/src/functions/basic.php');
-
-/**
- * Codigo php  
- */
-```
 Ya con eso tiene disponibles el paquete, tan solo llamandolos
 
 ```php
 <?php
-require_once ('vendor/codwelt/HelpersMan/src/functions/basic.php');
+use Codwelt\HelpersMan\HelpersMan;
 
-$ramdom = helperman_random_string(10);
+$ramdom = HelpersMan::random_string(10);
 ```
