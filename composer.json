@@ -3,7 +3,11 @@
     "description": "Funciones de ayuda para php, laravel y el mundo",
     "type": "library",
     "require": {
-        "php": ">= 7"
+
+    },
+    "require-dev":{
+        "phpunit/phpunit": "^7",
+        "phpdocumentor/phpdocumentor": "dev-master"
     },
     "license": "MIT",
     "authors": [
@@ -15,6 +19,11 @@
     "autoload": {
         "psr-4": {
             "Codwelt\\HelpersMan\\": "src"
+        }
+    },
+    "autoload-dev":{
+        "psr-4": {
+            "Codwelt\\HelpersMan\\Tests\\": "tests"
         }
     }
 }

@@ -35,4 +35,59 @@ class HelpersMan
         return preg_replace($regex,$remplaceTo,$string);
     }
 
+
+    /**
+     * Se encarga de hace el conteo de las palabras repetidas de un texto
+     * @param $text
+     * @param bool $deleteAcent
+     * @param bool $distinction_lowercase
+     * @param array $words_excluyed
+     * @return array
+     * @throws \Exception
+     */
+    public static function count_words_repeated($text, $deleteAcent = true, $distinction_lowercase = false, $words_excluyed = array())
+    {
+        if(!is_array($words_excluyed)){
+            throw new \Exception("las palabras excluidas deben venir en un array");
+        }
+
+        $order = array("\r\n", "\n", "\r");
+        $text = str_replace($order, " ", $text);
+        //Eliminacion de intros
+        $order_punt = array(",", ".", ":", ";", "(", ")", "?", "¿", "¡", "!",'"');
+        $text = str_replace($order_punt, "", $text);
+        //eliminacion de signos de puntuacion
+        $text = htmlspecialchars_decode($text);
+
+        //Eliminar tildes
+        if($deleteAcent){
+            $vocales_tilde = array("á", "é", "í", "ó", "ú", "Á", "É", "Í", "Ó", "Ú");
+            $vocales_sin = array("a","e","i","o","u","A","E","I","O","U");
+            $text = str_replace($vocales_tilde, $vocales_sin, $text);
+        }
+
+        if(!$distinction_lowercase){
+            $text = strtolower($text);
+        }
+
+        $array_palabras = explode(" ", $text);
+        $words_excluyed = implode(",",$words_excluyed);
+        $excluidas = explode(",", $words_excluyed);
+
+        $array_final = array();
+        foreach ($array_palabras as $palabra)/*Recorro todo el array*/
+        {
+            if (!in_array($palabra, $excluidas)) {//Si la palabra no es de las excluidas
+                if (isset($array_final[$palabra])) {//Compruebo si existe ya la palabra
+                    $array_final[$palabra] = $array_final[$palabra] + 1;
+                } else {
+                    $array_final[$palabra] = 1;
+                }
+            }
+        }
+        arsort($array_final);
+        return $array_final;
+
+    }
+
 }
