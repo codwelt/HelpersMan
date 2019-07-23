@@ -37,7 +37,7 @@ class HelpersMan
 
 
     /**
-     * Se encarga de hace el conteo de las palabras repetidas de un texto
+     * Se encarga de hace el conteo de las palabras repetidas de un texto Basado en el contado de palabras de pablo https://github.com/pabloguti/contar_palabras
      * @param $text
      * @param bool $deleteAcent
      * @param bool $distinction_lowercase
