@@ -21,7 +21,9 @@ Scripts, metodos  y objectos de ayuda para programadores de php.
      - $deleteAcent: por defecto es `true` es una bandera para saber si se eliminan los acentos de las palabras
      - $distinction_lowercase: por defecto es `false` es una bandera para saber si se tiene en cuenta la distincion de las mayusculas y minusculas cuando se cuentan las palabras
      - $words_excluyed: por defecto es un array vacio. Es un array con la lista de palabras que no se desean contar
-     
+- delete_acents($string)
+
+    Se encarga de eliminar los acentos del string ingresado
      ####Ejemplo 
      ```php
          <?php
