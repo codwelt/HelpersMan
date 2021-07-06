@@ -3,11 +3,10 @@
     "description": "Funciones de ayuda para php, laravel y el mundo",
     "type": "library",
     "require": {
-
+        "voku/portable-ascii": "^1.5"
     },
     "require-dev":{
-        "phpunit/phpunit": "^7",
-        "phpdocumentor/phpdocumentor": "dev-master"
+           "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
     },
     "license": "MIT",
     "authors": [
