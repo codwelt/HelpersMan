@@ -1,6 +1,7 @@
 <?php
 namespace Codwelt\HelpersMan\Tests;
 use Codwelt\HelpersMan\HelpersMan;
+use Codwelt\HelpersMan\Str;
 
 /**
  * Class BasicTest
@@ -21,7 +22,14 @@ class BasicTest extends TestCase
         $countWords = HelpersMan::count_words_repeated($text);
 
         $this->assertTrue($countWords['un'] == 2);
+    }
 
+    public function test_numero_a_letra()
+    {
+        $numero = "400000";
+        $resutlado = Str::numberToLetter($numero);
+        $numeroEnLentras = "CUATROCIENTOS MIL";
+        $this->assertEquals($numeroEnLentras,$resutlado);
     }
 
 }

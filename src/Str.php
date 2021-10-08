@@ -111,4 +111,11 @@ class Str
         return trim($title, $separator);
 
     }
+
+    public static function numberToLetter(int $numero)
+    {
+        $converter = new NumberToLetterConverter();
+        return $converter->to_word($numero);
+
+    }
 }
