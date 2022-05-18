@@ -3,7 +3,7 @@
     "description": "Funciones de ayuda para php, laravel y el mundo",
     "type": "library",
     "require": {
-        "voku/portable-ascii": "^1.5"
+        "voku/portable-ascii": "^2"
     },
     "require-dev":{
            "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
