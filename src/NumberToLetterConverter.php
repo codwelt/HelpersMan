@@ -1,6 +1,8 @@
 <?php 
 namespace Codwelt\HelpersMan;
 
+use Exception;
+
 /**
  * Basado en 
  * @link https://github.com/axiacore/number-to-letter-php/blob/master/NumberToLetterConverter.class.php
@@ -96,10 +98,9 @@ class NumberToLetterConverter {
      * Convierte número a letras
      * @param $number
      * @param $miMoneda
-     * @param $type tipo de dígito (entero/decimal)
      * @return $converted string convertido
      */
-    private function convertNumber($number, $miMoneda = null, $type) {   
+    private function convertNumber($number, $miMoneda = null) {   
         
         $converted = '';
         if ($miMoneda !== null) {
