@@ -1,6 +1,8 @@
 <?php 
 namespace Codwelt\HelpersMan;
 
+use Exception;
+
 /**
  * Basado en 
  * @link https://github.com/axiacore/number-to-letter-php/blob/master/NumberToLetterConverter.class.php
