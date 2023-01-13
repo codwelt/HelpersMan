@@ -3,7 +3,7 @@ Scripts, metodos  y objectos de ayuda para programadores de php.
 
 # Caracteristicas
 
-## Metodos
+## Metodos Helpersman
 - random_string($length, $keyspace)   
   
    Genera un string aleatorio de con los caracteres de keyspace y de un tamaño indicado con el lenght
@@ -51,7 +51,10 @@ Scripts, metodos  y objectos de ayuda para programadores de php.
      }
    ```      
      
-    
+## Metodos Time
+
+Son metodos creados para manejar el tiempo
+
 
 ## Instalacion
 
