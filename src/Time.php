@@ -1,5 +1,5 @@
 <?php
-namespace  Codwelt\HelpersMan;
+namespace Codwelt\HelpersMan;
 
 class Time {
 
@@ -10,12 +10,12 @@ class Time {
      * 
      * 
      *
-     * @param string $añoEdad es el año o el numero del años que se deben calcular
+     * @param string | int $añoEdad es el año o el numero del años que se deben calcular
      * @return array 
      */
-    public static function years_with_date(string $añoEdad)
+    public static function years_with_date($añoEdad)
     {
-        $año =  $anoInmueble;
+        $año =  $añoEdad;
         $edad = null;
         if(!is_null($año) && is_numeric($año)){
 
